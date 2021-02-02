@@ -1,3 +1,5 @@
 
 username: naveen
-password: naveen
+
+dbuser config
+mysql data
