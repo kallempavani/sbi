@@ -1,6 +1,1 @@
-
-username: naveen
-password: naveen
-dbuser config
-mysql datai
-ansible
+h:wq!
