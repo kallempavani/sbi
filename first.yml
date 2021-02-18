@@ -1,0 +1,30 @@
+- hosts: all
+  become: yes
+  tasks:
+    
+    - name: install httpd
+      yum:
+        name: httpd
+        state: installed
+    
+    - name: install httpd
+      yum:
+        name: unzip
+        state: installed
+
+    - name: start httpd service
+      service:
+        name: httpd
+        state: started 
+   
+    - name: download sample html file
+      get_url:
+        url: https://www.free-css.com/assets/files/free-css-templates/download/page264/rocket-internet.zip
+        dest: /home/ansadm
+
+    
+    - name: unzip rocket-internet.zip
+      unarchive:
+        src: /home/ansadm/rocket-internet.zip
+        dest: /var/www/html/ 
+        remote_src: yes 

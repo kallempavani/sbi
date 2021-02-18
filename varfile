@@ -1,0 +1,5 @@
+pack1: httpd
+cssurl:  https://www.free-css.com/assets/files/free-css-templates/download/page264/rocket-internet.zip
+extract: unzip
+remote_dest: /home/ansadm
+
